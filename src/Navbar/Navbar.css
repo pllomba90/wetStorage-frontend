@@ -1,0 +1,10 @@
+
+.navlink:hover{
+    cursor: pointer;
+    }
+    
+.navbar{
+        outline: rgb(12, 97, 97) solid 2px;
+       margin: 0%;
+       padding: 0%;
+    }

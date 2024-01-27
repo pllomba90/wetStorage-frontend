@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    align-items:center;
+    justify-content:center;
+    margin:5%;
+}
+
+.form{
+    border: 2px;
+    background-color: rgba(128, 128, 128, 0.637);
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+
+}

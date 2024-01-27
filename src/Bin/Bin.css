@@ -1,0 +1,32 @@
+
+
+.bin{
+    background-color: rgba(128, 128, 128, 0.637);
+    color: white;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    padding: 2px;
+    height: auto;
+    width:auto;
+    margin: 2px;
+    border-radius: 5%;   
+}
+
+.bin:hover{
+    cursor: pointer;
+    box-shadow: 4px 4px black;
+}
+
+.singleBin{
+    background-color: rgba(128, 128, 128, 0.637);
+    color: white;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    padding: 2px;
+    height:  200px;
+    width: 200px;
+    margin: 2px;
+    border-radius: 5%;
+}
