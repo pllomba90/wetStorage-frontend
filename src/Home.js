@@ -16,14 +16,18 @@ const Home = () => {
           <h1>Norumbega Oyster</h1>
         </div>
         </div > 
-        <div className="container ">
+        <div className="login">
           <p>Please login or create a user to continue!</p>
+          <div>
           <Button color="secondary" onClick={() => setShowLoginPopup(true)}>
             Login
             </Button>
+            </div>
+            <div>
           <Button color="secondary"
           onClick={() => setShowNewUserPopup(true)}>
             Create User</Button>
+        </div>
         </div>
         <Popup
         open={showLoginPopup}

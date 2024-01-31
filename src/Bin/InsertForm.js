@@ -54,7 +54,7 @@ const InsertForm = ({closeInsertForm, binName}) => {
  
 
   return (
-    <div className="container form">
+    <div className="form">
       <Form onSubmit={handleSubmit}>
         <FormGroup>
           <Label for="gradeInput">Grade</Label>

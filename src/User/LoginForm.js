@@ -19,7 +19,7 @@ const LoginForm = (props) => {
        
         if (res.token) {  
             localStorage.setItem("token", res.token);
-           redirect("/downriver_strg");
+           return redirect("/downriver_strg");
           } else {
             
             console.error("Login failed");
@@ -28,7 +28,7 @@ const LoginForm = (props) => {
       
 
     return (
-        <div className="container form" >
+        <div className="form" >
             <Form onSubmit={handleSubmit}>
                 <FormGroup>
                     <Label for="usernameInput">

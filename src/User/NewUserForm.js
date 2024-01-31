@@ -35,7 +35,7 @@ const NewUserForm = (props) => {
       
 
     return (
-        <div className="container form" >
+        <div className="form" >
             <Form onSubmit={handleSubmit}>
                 <FormGroup>
                     <Label for="usernameInput">

@@ -58,7 +58,11 @@ const Grades = () => {
       <div className="title_box">
         <div className="title">
           <h1>Norumbega Oyster</h1>
+          
         </div>
+        <div>
+          <h4>Grades</h4>
+          </div>
       </div>
       {showForm ? (
         <AddGrade onCancel={toggleForm} />
