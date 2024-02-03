@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { redirect } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Form, FormGroup, Label, Input, Button } from "reactstrap";
 import { handleInputChange } from "../helpers/formHelper";
 import UserAPI from "../helpers/UserApi";
@@ -7,7 +7,7 @@ import UserAPI from "../helpers/UserApi";
 
 
 const NewUserForm = (props) => {
-        
+    const navigate = useNavigate();
     const initialState = {
         username : "",
         password : ""
@@ -20,11 +20,11 @@ const NewUserForm = (props) => {
         try {
           const res = await UserAPI.createUser(formData);
           console.log(res);
-      
+          localStorage.setItem("token", res);
           if (res) {
-            localStorage.setItem("token", res.token);
             
-            redirect("/downriver_strg");
+            
+            return navigate("/downriver_strg");
           } else {
             console.error("User creation failed");
           }

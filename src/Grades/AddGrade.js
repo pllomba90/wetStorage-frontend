@@ -27,7 +27,7 @@ const AddGrade = () => {
 
 
     return (
-        <div className="container form" >
+        <div className="form" >
             <Form onSubmit={handleSubmit}>
                 <FormGroup>
                     <Label for="gradeInput">

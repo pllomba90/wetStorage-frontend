@@ -1,11 +1,11 @@
 import React, {useState} from "react";
-import { redirect } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Form, FormGroup, Label, Input, Button } from "reactstrap";
 import { handleInputChange } from "../helpers/formHelper";
 import UserAPI from "../helpers/UserApi";
 
 const LoginForm = (props) => {
-    
+    const navigate = useNavigate();
     const initialState = {
         username : "",
         password : ""
@@ -16,10 +16,10 @@ const LoginForm = (props) => {
     const handleSubmit = async (e) =>{
         e.preventDefault();
         const res = await UserAPI.login(formData);
-       
-        if (res.token) {  
-            localStorage.setItem("token", res.token);
-           return redirect("/downriver_strg");
+        localStorage.setItem("token", res);
+        if (res) {  
+            
+           return navigate("/downriver_strg");
           } else {
             
             console.error("Login failed");

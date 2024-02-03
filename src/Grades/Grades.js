@@ -64,14 +64,18 @@ const Grades = () => {
           <h4>Grades</h4>
           </div>
       </div>
+      <div className="container">
       {showForm ? (
         <AddGrade onCancel={toggleForm} />
       ) : (
-        <div className="container">{renderTable()}</div>
+        <div className="gradeTable">{renderTable()}</div>
       )}
+    </div>
+    <div className="button">
       <Button color="secondary" onClick={toggleForm}>
         {showForm ? "Cancel" : "Add Grade"}
       </Button>
+      </div>
     </div>
   );
 }
