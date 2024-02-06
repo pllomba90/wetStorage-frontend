@@ -28,7 +28,7 @@ const Tooltip = () => (
             <Popup trigger={ open =>(
             <Button color="secondary" onClick={setSelectedBinName(bin.bin_name)}>
             Insert Oysters/Harvest
-            {open ? 'Opened' : null} </Button>)}
+            {open ? true : null} </Button>)}
           nested
 
           >

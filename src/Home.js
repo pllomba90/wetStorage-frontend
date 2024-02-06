@@ -29,13 +29,16 @@ const Home = () => {
             Create User</Button>
         </div>
         </div>
+       
         <Popup
         open={showLoginPopup}
         onClose={() => setShowLoginPopup(false)}
         modal
+        nested
       >
         <LoginForm onClose={() => setShowLoginPopup(false)}/>
       </Popup>
+      
       <Popup
         open={showNewUserPopup}
         onClose={() => setShowNewUserPopup(false)}
